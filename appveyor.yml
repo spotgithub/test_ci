@@ -3,4 +3,5 @@ build_cloud: Dino-Home
 image: Ubuntu1804
 
 before_test:
-  - go env
+  - ls
+  - sudo go env
