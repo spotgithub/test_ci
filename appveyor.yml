@@ -1,14 +1,6 @@
-# appveyor.yml
-build: off
-
-clone_folder: /root/go/src/github.com/$username/$project
-
-environment:
-  GOPATH: /root/go
-
-stack: go 1.18
+version: 1.0.{build}
+build_cloud: Dino-Home
+image: Ubuntu1804
 
 before_test:
-  - go vet ./main.go
-test_script:
-  - go test ./main.go
+  - go env
