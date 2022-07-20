@@ -1,15 +1,14 @@
 # appveyor.yml
 build: off
 
-clone_folder: /usr/go/src/github.com/$username/$project
+clone_folder: /root/go/src/github.com/$username/$project
 
 environment:
-  GOPATH: /usr/go/
+  GOPATH: /root/go
 
-stack: go 1.10
+stack: go 1.18
 
 before_test:
-  - go vet ./...
-
+  - go vet ./main.go
 test_script:
-  - go test ./...
+  - go test ./main.go
