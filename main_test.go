@@ -11,5 +11,5 @@ func setup() {
 }
 
 func Test_main(t *testing.T){
-	assert.Equal(t,"jj", test(),"字元錯誤")
+	assert.Equal(t,"yes", test(),"字元錯誤")
 }
