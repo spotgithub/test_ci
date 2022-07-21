@@ -4,4 +4,4 @@ image: Ubuntu1804
 
 before_test:
   - ls
-  - sudo go env
+  - go env
