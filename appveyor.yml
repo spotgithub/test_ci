@@ -3,5 +3,8 @@ build_cloud: Dino-Home
 image: Ubuntu1804
 
 before_test:
-  - ls
   - go env
+  - go mod download
+
+test_script:
+  - go test
