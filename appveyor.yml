@@ -1,10 +1,10 @@
 version: 1.0.{build}
 build_cloud: Dino-Home
-build: Script
 image: Ubuntu1804
 
 before_test:
   - go mod download
+  - go vet ./main.go
 
 test_script:
   - go test
